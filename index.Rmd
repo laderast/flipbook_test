@@ -33,7 +33,6 @@ data("penguins")
 }
 ```
 
-
 ```{r my_penguins, include = FALSE}
 penguins %>% 
   ggplot() +
@@ -50,4 +49,5 @@ penguins %>%
 ```
 
 ---
-`r chunk_reveal(chunk_name = "my_penguins", title = "### First flipbook!")`
+
+`r chunk_reveal(chunk_name = "my_penguins", title = "### Faceting the Palmer Penguins!")`
