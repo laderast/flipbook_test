@@ -168,7 +168,8 @@ penguins %&gt;%
   aes(y=bill_depth_mm) +
   geom_point() +
   aes(color = species) +
-* facet_wrap(~island)
+* scale_color_manual(values =
+*     c("darkorange","purple","cyan4"))
 ```
 ]
  
@@ -189,8 +190,9 @@ penguins %&gt;%
   aes(y=bill_depth_mm) +
   geom_point() +
   aes(color = species) +
-  facet_wrap(~island) +
-* theme_minimal()
+  scale_color_manual(values =
+      c("darkorange","purple","cyan4")) +
+* facet_wrap(~island)
 ```
 ]
  
@@ -211,11 +213,10 @@ penguins %&gt;%
   aes(y=bill_depth_mm) +
   geom_point() +
   aes(color = species) +
+  scale_color_manual(values =
+      c("darkorange","purple","cyan4")) +
   facet_wrap(~island) +
-  theme_minimal() +
-* labs(x="Bill Length (mm)",
-*      y="Bill Depth (mm)",
-*      title = "Palmer Penguins by Islands")
+* theme_minimal()
 ```
 ]
  
@@ -236,6 +237,35 @@ penguins %&gt;%
   aes(y=bill_depth_mm) +
   geom_point() +
   aes(color = species) +
+  scale_color_manual(values =
+      c("darkorange","purple","cyan4")) +
+  facet_wrap(~island) +
+  theme_minimal() +
+* labs(x="Bill Length (mm)",
+*      y="Bill Depth (mm)",
+*      title = "Palmer Penguins by Islands")
+```
+]
+ 
+.panel2-my_penguins-auto[
+![](index_files/figure-html/my_penguins_auto_10_output-1.png)&lt;!-- --&gt;
+]
+
+---
+count: false
+ 
+### Faceting the Palmer Penguins!
+.panel1-my_penguins-auto[
+
+```r
+penguins %&gt;%
+  ggplot() +
+  aes(x=bill_length_mm) +
+  aes(y=bill_depth_mm) +
+  geom_point() +
+  aes(color = species) +
+  scale_color_manual(values =
+      c("darkorange","purple","cyan4")) +
   facet_wrap(~island) +
   theme_minimal() +
   labs(x="Bill Length (mm)",
@@ -245,7 +275,7 @@ penguins %&gt;%
 ]
  
 .panel2-my_penguins-auto[
-![](index_files/figure-html/my_penguins_auto_10_output-1.png)&lt;!-- --&gt;
+![](index_files/figure-html/my_penguins_auto_11_output-1.png)&lt;!-- --&gt;
 ]
 
 &lt;style&gt;

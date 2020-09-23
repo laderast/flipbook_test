@@ -40,6 +40,8 @@ penguins %>%
   aes(y=bill_depth_mm) +
   geom_point() +
   aes(color = species) +
+  scale_color_manual(values = 
+      c("darkorange","purple","cyan4")) +
   facet_wrap(~island) +
   theme_minimal() +
   labs(x="Bill Length (mm)", 
