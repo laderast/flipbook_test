@@ -43,7 +43,7 @@ penguins %>%
   scale_color_manual(values = 
       c("darkorange","purple","cyan4")) +
   facet_wrap(~island) +
-  theme_minimal() +
+  theme_bw() +
   labs(x="Bill Length (mm)", 
        y="Bill Depth (mm)", 
        title = "Palmer Penguins by Islands") 
